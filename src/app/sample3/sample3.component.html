@@ -1,0 +1,14 @@
+<form [formGroup]="form">
+  <input name="name" type="text" formControlName="name">
+ 
+  <input type="checkbox" name="agreement" formControlName="agreement">
+ 
+  <input type="radio" name="gender" value="male" formControlName="gender">男
+  <input type="radio" name="gender" value="female" formControlName="gender">女
+ 
+  <select name="work" formControlName="work">
+    <option *ngFor="let item of works" [ngValue]="item">{{item.label}}</option>
+  </select>
+ 
+  <textarea name="note" formControlName="note"></textarea>
+</form>

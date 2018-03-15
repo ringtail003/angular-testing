@@ -1,0 +1,14 @@
+<span name="id">{{id}}</span>
+
+<input name="name" type="text" [(ngModel)]="name">
+
+<input type="radio" name="gender" value="male" [(ngModel)]="gender">男
+<input type="radio" name="gender" value="female" [(ngModel)]="gender">女
+
+<input type="checkbox" name="agreement" [(ngModel)]="agreement">
+
+<select name="work" [(ngModel)]="work">
+  <option *ngFor="let item of works" [ngValue]="item">{{item.label}}</option>
+</select>
+
+<textarea name="note" [(ngModel)]="note"></textarea>

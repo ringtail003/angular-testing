@@ -1,0 +1,12 @@
+import { Injectable } from '@angular/core';
+
+@Injectable()
+export class LoggerService {
+
+  constructor() { }
+
+  log(): string {
+    return 'log text';
+ }
+
+}
